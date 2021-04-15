@@ -1,6 +1,5 @@
 console.log('****** Loops Practice *******');
 
-
 // 1. 'for' loop
 console.log('---- #1. For loops ----');
 // Example: a for loop to console.log numbers from 0 to 3
@@ -39,24 +38,43 @@ console.log('#1.d: STRETCH: Countdown from 5 to 0');
 for (let i = 5; i >= 0; i--) {
   console.log(i);
 }
-console.log("Answer: You didn't ask, but to do a loop in reverse, you set the highest desired number to the 'Iterator Variable', and then set the lowest desired number to the 'Stopping Condition'.  The 'Iteration Statement' changes from Increment to Decrement.");
+console.log("Answer: You didn't ask, but to do a for loop in reverse, you set the highest desired number to the 'Iterator Variable', and then set the lowest desired number to the 'Stopping Condition'.  The 'Iteration Statement' changes from Increment to Decrement.");
 
 // 2. For of loops
-console.log('---- 2. For Of loop ----');
+console.log('---- #2. For Of loop ----');
 let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
-console.log('Some stars:');
-
+console.log('#2.a: Some stars using For Of loops:');
+for (let star of stars) {
+  console.log(star);
+}
 
 // 3. While loops
-console.log('---- 3. While loop ----');
+console.log('---- #3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
-console.log('Some stars using while:');
+console.log('#3a.: Some stars using While loops:');
+let starIndex = 0;
+while (starName = stars[starIndex]) {
+  console.log(starName);
+  starIndex ++;
+}
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
-console.log('count from 0 to 5');
+console.log('#3.b: Count from 0 to 5');
+let countOne = 0;
+while (countOne < 6) {
+  console.log(countOne);
+  countOne ++;
+}
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
-console.log('count backwards from 10 to 5');
+console.log('#3.c: Count backwards from 10 to 5');
+let countTwo = 10;
+while (countTwo > 4) {
+  console.log(countTwo);
+  countTwo --;
+}
+
+console.log("Ryan's Comment: These were fun, thanks!  I'd say the trickiest was #3.a, the console.log with while loops. :)  Have a good day!");
