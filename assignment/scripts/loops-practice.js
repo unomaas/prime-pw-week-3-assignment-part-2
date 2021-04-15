@@ -35,8 +35,11 @@ for (let i = 2; i <= 10; i += 2) {
 console.log("Answer: You need to change three things: #1.) Change the the 'Iteration Statement' in the example for loop to be 'i += 2', so it'll add 2 each iteration, and #2.) Change the 'Stopping Condition' to end at 10 (I did this with '<= 10', but it could also be done with '< 11'), and lastly #3.) Change the 'Iterator Variable' to start at 2.");
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a counddown from 5 to 0
-console.log('STRETCH: countdown from 5 to 0');
-
+console.log('#1.d: STRETCH: Countdown from 5 to 0');
+for (let i = 5; i >= 0; i--) {
+  console.log(i);
+}
+console.log("Answer: You didn't ask, but to do a loop in reverse, you set the highest desired number to the 'Iterator Variable', and then set the lowest desired number to the 'Stopping Condition'.  The 'Iteration Statement' changes from Increment to Decrement.");
 
 // 2. For of loops
 console.log('---- 2. For Of loop ----');
